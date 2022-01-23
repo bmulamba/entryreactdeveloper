@@ -12,14 +12,14 @@ export default class Products extends Component {
 
           <div className='product-section' >
 
-            <div className='card'>
+          <div className='card'>
               <div className="card-image">
                 <img src='images/laptop-1.jpg' alt='gag'/>
               </div>
               <h3 className='cart-name'>Appollo running</h3>
               <h3 className='cart-price' ><b>$ 488</b></h3>
               <div className='product-cart'>
-                <i class="fa fa-shopping-cart" ></i>
+                <i className="fa fa-shopping-cart" ></i>
               </div>
           </div>
           <div className='card'>
@@ -29,7 +29,7 @@ export default class Products extends Component {
               <h3 className='cart-name'>Appollo running</h3>
               <h3 className='cart-price' ><b>$ 488</b></h3>
               <div className='product-cart'>
-                <i class="fa fa-shopping-cart" ></i>
+                <i className="fa fa-shopping-cart" ></i>
               </div>
           </div>
           <div className='card'>
@@ -39,7 +39,7 @@ export default class Products extends Component {
               <h3 className='cart-name'>Appollo running</h3>
               <h3 className='cart-price' ><b>$ 488</b></h3>
               <div className='product-cart'>
-                <i class="fa fa-shopping-cart" ></i>
+                <i className="fa fa-shopping-cart" ></i>
               </div>
           </div>
           <div className='card'>
@@ -49,7 +49,7 @@ export default class Products extends Component {
               <h3 className='cart-name'>Appollo running</h3>
               <h3 className='cart-price' ><b>$ 488</b></h3>
               <div className='product-cart'>
-                <i class="fa fa-shopping-cart" ></i>
+                <i className="fa fa-shopping-cart" ></i>
               </div>
           </div>
           <div className='card'>
@@ -59,7 +59,7 @@ export default class Products extends Component {
               <h3 className='cart-name'>Appollo running</h3>
               <h3 className='cart-price' ><b>$ 488</b></h3>
               <div className='product-cart'>
-                <i class="fa fa-shopping-cart" ></i>
+                <i className="fa fa-shopping-cart" ></i>
               </div>
           </div>
           <div className='card'>
@@ -69,7 +69,7 @@ export default class Products extends Component {
               <h3 className='cart-name'>Appollo running</h3>
               <h3 className='cart-price' ><b>$ 488</b></h3>
               <div className='product-cart'>
-                <i class="fa fa-shopping-cart" ></i>
+                <i className="fa fa-shopping-cart" ></i>
               </div>
           </div>
         </div>

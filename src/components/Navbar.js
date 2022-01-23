@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Cart  from './pages/Cart';
 import './Navbar.scss'
+import { Link } from 'react-router-dom';
 
 const options = [
     {
@@ -21,6 +22,23 @@ const options = [
 ]
 export default class Navbar extends Component {
 
+    constructor(){
+        super();
+        this.state = {
+            isHovered : false
+        };
+
+        this.handleHover = this.handleHover.bind(this);
+    }
+
+    handleHover(){
+        this.setState(prevState => {
+            return {
+                isHovered : !prevState.isHovered
+            }
+        })
+    }
+
   render() {
     return <>
         <div className='navbar' >
@@ -31,7 +49,7 @@ export default class Navbar extends Component {
                    <li className="link" >cloths</li>
                </ul>
                <div className='link-bag'>
-               <i className="fa fa-shopping-bag " ></i>
+                 <i className="fa fa-shopping-bag " ></i>
                </div>
                <div className='nav-link-belt'>
                    <div className='nav-link-select'>
@@ -42,14 +60,13 @@ export default class Navbar extends Component {
                        </select>
                    </div>
                    <div className='nav-cart'>
-                        <i className="fa fa-shopping-cart" ></i>
-                        <span className='nav-cart-quantity'>4</span>
+                        <Link to="/cart" onMouseEnter={this.handleHover} onMouseLeave={this.handleHover}><i className='fa fa-shopping-cart' ></i>
+                        <span className='nav-cart-quantity'>4</span></Link>
                    </div>
-
                </div>
             </div>
         </div>
-        <Cart/>
+        { this.state.isHovered  && <Cart />}
     </>;
   }
 }
